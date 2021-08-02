@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>三栏布局</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin:  0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .box {
+                /* 父元素相对定位 */
+                position: relative;
+                background-color:wheat;
+            }
+            .middle {
+                height: 100px;
+                margin-left: 110px;
+                margin-right: 110px;
+                background-color:royalblue;
+            }
+            .left {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                background-color:salmon;
+            }
+            .right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100px;
+                height: 100px;
+                background-color:sandybrown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="left">左边</div>
+            <div class="middle">中间</div>
+            <div class="right">右边</div>
+        </div>
+        <div>尾部内容</div>
+    </body>
+</html>

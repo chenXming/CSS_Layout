@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html>
+  <head>
+  	 <title>响应式布局</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       <style>
+           * {
+               padding: 0;
+               margin: 0;
+               box-sizing: border-box;
+           }
+           body {
+               background-color: white;
+           }
+           /* 当屏幕尺寸大于等于1025 样式 */
+           @media only screen and (min-width: 1025px){
+               body {
+                   background-color: wheat;
+               }
+               .item {
+                   float: left;
+                   border: 1px solid skyblue;
+                   width: 300px;
+                   height: 50px;
+                   line-height: 50px;
+                   text-align: center;
+                   margin: 10px 30px;
+               }
+           }
+           /** iPad 屏幕尺寸大于等于768 小于等于1024 竖屏**/
+           @media only screen and (min-width: 768px) and (max-width: 1024px) {
+               body {
+                   background-color: rosybrown;
+               }
+               .item {
+                   float: left;
+                   border: 1px solid skyblue;
+                   width: 200px;
+                   height: 50px;
+                   line-height: 50px;
+                   text-align: center;
+                   margin: 5px 20px;
+               }
+           }
+           /** iPhone 屏幕尺寸小于等于767 竖屏样式**/
+           @media only screen and (max-width: 767px){
+               body {
+                   background-color:royalblue;
+               }
+               .item {
+                   float: left;
+                   border: 1px solid skyblue;
+                   width: 100px;
+                   height: 30px;
+                   line-height: 30px;
+                   text-align: center;
+                   margin: 5px 10px;
+               }
+           }    
+       </style>
+  </head>
+<body>
+	<div class="container">
+        <div class="item item0">item0</div>
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+        <div class="item item6">item6</div>
+        <div class="item item7">item7</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

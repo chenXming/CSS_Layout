@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex布局</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin:  0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                background-color: wheat;
+                flex-wrap: wrap;
+                /* height: 400px; */
+            }
+           .item {
+               width: 100px;
+               height: 100px;
+               border: 1px solid royalblue;
+               text-align: center;
+               line-height: 100px;
+               margin: 10px 10px;
+           }
+           .item6 {
+               flex: 1;
+           }
+           .item7 {
+               flex: 2;
+           }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item0 item">item0</div>
+            <div class="item1 item">item1</div>
+            <div class="item2 item">item2</div>
+            <div class="item3 item">item3</div>
+            <div class="item4 item">item4</div>
+            <div class="item5 item">item5</div>
+            <div class="item6 item">item6</div>
+            <div class="item7 item">item7</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex布局</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin:  0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: wheat;
+                /* height: 100vh; */
+            }
+            .left {
+                width: 150px;
+                height: 200px;
+                background-color: rosybrown;
+            }
+            .right {
+                width: 150px;
+                height: 200px;
+                background-color: saddlebrown;
+            }
+            .middle {
+                /* 宽度沾满剩下的整个区域 */
+                flex: 1;
+                height: 200px;
+                background-color: seagreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">左侧</div>
+            <div class="middle">中间</div>
+            <div class="right">右侧</div>
+       </div>       
+</html>

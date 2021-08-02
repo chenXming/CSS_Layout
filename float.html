@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>float布局</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin:  0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                background-color: wheat;
+            }
+            .left {
+                float: left;
+                width: 200px;
+                height: 300px;
+                background-color: rosybrown;
+            }
+            .right {
+                float: right;
+                width: 200px;
+                height: 300px;
+                background-color: saddlebrown;
+            }
+            .last {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            /* .container::after{
+                content: "";
+                display: table;
+                clear: both;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">左侧</div>
+            <div class="right">右侧</div>
+            <!-- <div style="clear: both;"></div> -->
+        </div>
+        <div class="last">后面</div>
+    </body>
+</html>

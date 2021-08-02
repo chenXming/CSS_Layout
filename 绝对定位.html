@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>相对定位</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin:  0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                background-color: wheat;
+            }
+            .left {
+                width: 50px;
+                height: 100px;
+                background-color: rosybrown;
+                /* position: relative;
+                z-index: 10; */
+            }
+            .right {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 50px;
+                height: 100px;
+                background-color: saddlebrown;
+            }
+            .last {
+                width: 50px;
+                height: 100px;
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">左侧</div>
+            <div class="right">右侧</div>
+        </div>
+        <div class="last">后面</div>
+    </body>
+</html>

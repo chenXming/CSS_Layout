@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grid布局</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin:  0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 200px 1fr 200px;
+                grid-template-rows: 100px minmax(100px,1fr) 100px;
+                grid-gap: 20px;
+                background-color: skyblue;
+                height: 100vh;
+            }
+            .first{
+                background-color: slateblue;
+                grid-row: 1;
+                grid-column: 1/4;
+            }
+            .second {
+                background-color: slategray;
+                height: 400px;
+            }
+            .third {
+                background-color: springgreen;
+            }
+            .fourth {
+                background-color: teal;
+                height: 300px;
+=            }
+            .fifth {
+                background-color: wheat;
+                grid-row: 3;
+                grid-column: 1/4;
+                /* position: fixed;
+                bottom: 0px;
+                width: 100%;
+                height: 100px; */
+            }
+          
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+           <div class="first">first</div>
+           <div class="second">second</div>
+           <div class="third">third
+              
+           </div>
+           <div class="fourth">fourth</div>
+           <div class="fifth">fifth</div>
+        </div>
+    </body>
+</html>

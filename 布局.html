@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>标题</title>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: white;
+            }
+            div {
+                border: 1px solid red;
+            }
+            span {
+                border: 1px solid green;
+                height: 300px;
+                margin-bottom: 100px;
+            }
+            body :nth-child(4) {
+                display: inline-block;
+                background-color:salmon;
+            }
+        </style>
+    </head>
+    <body>
+        <div>这是一个div块元素</div>
+        <span>这是一个行内元素</span>
+        <span>这是另一个行内元素</span>
+        <div>
+            这是行内块元素
+        </div>
+        <div>这是还是一个div块元素</div>
+    </body>
+</html>
